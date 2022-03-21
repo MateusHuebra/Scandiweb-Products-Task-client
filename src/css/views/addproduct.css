@@ -1,0 +1,49 @@
+form {
+    text-align: left;
+}
+
+.row label {
+    display: inline-block;
+    width: 130px;
+}
+
+.labels-and-inputs-group {
+    display: flex;
+    flex-direction: row;
+}
+
+.row + .row {
+    margin-top: 10px;
+}
+
+.notification {
+    color: red;
+}
+
+select {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: smaller;
+}
+
+
+.slide-fade-enter-active {
+  transition: all 0.25s ease-out;
+}
+.slide-fade-leave-active {
+  transition: all 0.25s ease-out;
+  position: absolute;
+}
+
+.slide-fade-enter-from {
+  opacity: 0;
+  transform: translateX(-350px);
+}
+
+.slide-fade-leave-to {
+  opacity: 0;
+  transform: translateX(350px);
+}

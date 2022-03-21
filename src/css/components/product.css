@@ -1,0 +1,50 @@
+.product {
+    transition: 0.4s;
+    position: relative;
+    max-width: 200px;
+    border: black solid 2px;
+    padding: 30px 20px 30px 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.500);
+    overflow: hidden;
+}
+
+.product-skeleton {
+    overflow: hidden;
+    padding: 102px 20px 30px 20px;
+}
+
+.product-skeleton::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -150px;
+    top: 0;
+    height: 100%;
+    width: 150px;
+    background: linear-gradient(to right, transparent 0%, #E8E8E8 50%, transparent 100%);
+    animation: load 1s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+}
+
+.selected {
+    transition: 0.2s;
+    background-color:rgb(199, 208, 216);
+}
+
+.product span {
+    display: block;
+}
+
+.delete-checkbox {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+@keyframes load {
+    from {
+        left: -150px;
+    }
+    to   {
+        left: 100%;
+    }
+}
